@@ -1,0 +1,74 @@
+.modal-overlay.open{
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 100;
+}
+.modal-window.open{
+    transform: translateY(8rem);
+    z-index: 100;
+}
+
+
+/* Position of modal windwos is closed  */
+.modal-overlay{
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left:0;
+    right:0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0); /* invisible */
+    transition: background .3s;
+}
+
+/* Position of modal windwos is closed  */
+.modal-window{
+    width: 20rem;
+    /* height: 12rem; interim */
+    border-radius: .5rem;
+    background-color: white;
+    margin: auto;
+    /* margin-top: 15rem; */
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    transform: translateY(-30rem);
+    transition: transform .3s;
+
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.575);
+    padding: .4rem .8rem;
+}
+
+div.modal-header span.modal-close{
+    font-size: 1.2rem;
+}
+
+div.modal-header span.modal-close:hover{
+    cursor: pointer;
+}
+
+div.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+
+div.modal-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.modal-footer button{
+    background-color: rgb(24, 63, 130);
+    color: white;
+    border-radius: .3rem;
+    padding: .8rem;
+    margin: .8rem;
+}

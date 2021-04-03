@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+div.cart{
+    position: fixed;
+    top: .8rem;
+    right: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+
+ion-icon[name=cart-outline]{
+    font-size: 40px;
+    padding-left: 1rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+button:hover { cursor: pointer; }
+
+nav button{
+
+    margin-top: 2rem;
+    padding: .5rem;
+    cursor: pointer;
+    width: 50%;
+    border-radius: .3rem;
+    background-color: rgb(24, 63, 130);
+    color: white;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product{
+    /* border: 1px solid black; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.product img{
+    width: 60%;
+    align-self: center;
+}
+
+.product-description{
+    padding: .8rem .5rem;
+}
+
+.product button{
+    padding: .5rem;
+    background-color: rgb(24, 63, 130);
+    color: white;
+    border-radius: .3rem;
+}
