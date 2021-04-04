@@ -1,6 +1,6 @@
 # Modal window
 
-modal.js is based on a module design pattern and it creates a modal window with style described in modal.css
+modal.js is based on a module design pattern and it creates a modal window with the style described in modal.css (Pure JS and CSS)
 
 ## Features
 
